@@ -158,13 +158,26 @@
 }
 
 @media (max-width: 1024px) {
-	.content-image {
-		width: 100%;
-		height: 100%;
+	.content-image-lg {
+		display: none;
+	}
+	
+	.content-image-sm {
+		display: block;
 	}
 	
 	.content-video {
 		width: 100%;
 		height: 100%;
+	}
+}
+
+@media (min-width: 1024px) {
+	.content-image-lg {
+		display: block;
+	}
+	
+	.content-image-sm {
+		display: none;
 	}
 }
